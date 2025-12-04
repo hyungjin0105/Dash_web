@@ -1,10 +1,10 @@
-# Silo 관리자 웹 · 아키텍처 킥오프
+# Dash 관리자 웹 · 아키텍처 킥오프
 
 ## 1. 기술 스택
 
 - **프레임워크**: Vite + React + TypeScript
 - **데이터**: Firestore 읽기/쓰기에 React Query 사용
-- **디자인**: Pretendard 폰트와 Silo 대표 색(#FF9F0F)을 활용한 경량 스타일
+- **디자인**: Pretendard 폰트와 Dash 대표 색(#8B5CF6)을 활용한 경량 스타일
 - **Firebase SDK**: 모듈식 v10 (Auth, Firestore, Storage, Analytics 선택)
 
 ## 2. Firebase 연동
@@ -16,7 +16,7 @@
 
 | 파일 | 역할 |
 | --- | --- |
-| `.env.example` | `silo-10aa1` 자격 정보 템플릿 |
+| `.env.example` | `dash-10aa1` 자격 정보 템플릿 |
 | `.env.local` | 실제 개발 환경 변수 (Git에 커밋 금지) |
 | `src/vite-env.d.ts` | 환경 변수 타입 안전성 보장 |
 | `VITE_NAVER_MAP_KEY_ID` | 네이버 지도 API Key ID (Maps JS v3) |
@@ -29,7 +29,7 @@
 - 기본 로그인 방식: Google (Apple은 호스팅 도메인 승인 후 추가 예정)
 - 접근 허용 조건:
   1. Firebase Auth 사용자에 `admin=true` 커스텀 클레임 존재
-  2. 또는 이메일 도메인이 `VITE_ADMIN_EMAIL_DOMAIN` (기본값 `@silo.app`)에 해당
+  2. 또는 이메일 도메인이 `VITE_ADMIN_EMAIL_DOMAIN` (기본값 `@dash.app`)에 해당
   3. `VITE_ALLOW_ALL_EMAILS=true`인 경우 모든 이메일 임시 허용
 - `AuthProvider`가 사용자 상태에 따라 로딩/로그인/거절 화면을 전환합니다.
 - 운영 단계에서 Callable Function 또는 Admin SDK 스크립트로 클레임을 부여하세요.
@@ -41,12 +41,12 @@
   - `restaurants/{restaurantId}/menus/{menuSectionId}`: `order` 필드로 정렬된 섹션과 다중 `items + optionGroups`
   - 향후 `orders`, `favorites` 등은 동일한 프로젝트에서 공유
 - 가격은 부동소수점을 피하기 위해 원 단위 정수로 저장합니다.
-- Cloud Storage 경로 예시: `gs://silo-10aa1/restaurants/{restaurantId}/media/{assetId}.jpg`
+- Cloud Storage 경로 예시: `gs://dash-10aa1/restaurants/{restaurantId}/media/{assetId}.jpg`
 
 ## 5. 호스팅 및 CI
 
-1. `firebase init hosting`으로 `firebase.json`, `.firebaserc`에 `silo-admin` 타깃을 추가합니다.
-2. GitHub Actions 등 CI에서 `npm ci && npm run build` 후 `firebase deploy --only hosting:silo-admin` 실행을 권장합니다.
+1. `firebase init hosting`으로 `firebase.json`, `.firebaserc`에 `dash-admin` 타깃을 추가합니다.
+2. GitHub Actions 등 CI에서 `npm ci && npm run build` 후 `firebase deploy --only hosting:dash-admin` 실행을 권장합니다.
 3. 프리뷰 채널을 활용해 QA와 Flutter 팀이 동일 데이터를 검증하도록 합니다.
 
 ## 6. 근시일 내 TODO

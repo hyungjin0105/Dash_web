@@ -260,7 +260,7 @@ export const PromotionForm = () => {
                 name="couponCode"
                 value={values.couponCode}
                 onChange={handleChange}
-                placeholder="예: SILO10 (비워두면 자동 적용)"
+                placeholder="예: DASH10 (비워두면 자동 적용)"
               />
             </label>
             <label>

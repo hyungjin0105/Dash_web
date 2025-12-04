@@ -39,8 +39,8 @@ export const AppLayout = ({
         <div className="sidebar__brand">
           <span className="brand__dot" />
           <div>
-            <strong>Silo 관리자</strong>
-            <p className="brand__project">silo-10aa1</p>
+            <strong>Dash 관리자</strong>
+            <p className="brand__project">dash-10aa1</p>
           </div>
         </div>
         <nav className="sidebar__nav">
@@ -57,7 +57,7 @@ export const AppLayout = ({
           ))}
         </nav>
         <div className="sidebar__footer">
-          <p className="sidebar__hint">고객센터 : support@silo.app</p>
+          <p className="sidebar__hint">고객센터 : support@dash.app</p>
           <p className="sidebar__hint">운영시간 10:00 ~ 19:00</p>
           <a className="sidebar__hint" href="/privacy">
             개인정보 처리방침

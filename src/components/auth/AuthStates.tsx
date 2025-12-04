@@ -13,12 +13,12 @@ export const SignInState = () => {
   return (
     <div className="full-bleed-state">
       <div className="brand-mark">
-        <span className="brand-mark__logo">S</span>
-        <span className="brand-mark__name">Silo Admin</span>
+        <span className="brand-mark__logo">D</span>
+        <span className="brand-mark__name">Dash Admin</span>
       </div>
       <p className="eyebrow">인증</p>
       <h2>Google 계정으로 로그인</h2>
-      <p>@silo.app 계정 또는 admin 클레임이 부여된 계정만 허용됩니다.</p>
+      <p>@dash.app 계정 또는 admin 클레임이 부여된 계정만 허용됩니다.</p>
       <button onClick={signIn}>Google로 계속</button>
       {error && <p className="state__error">{error}</p>}
     </div>

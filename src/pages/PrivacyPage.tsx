@@ -3,7 +3,7 @@ export const PrivacyPage = () => (
     <section className="panel panel--sub">
       <header>
         <p className="eyebrow">개인정보 처리방침</p>
-        <h2>Silo 파일럿 개인정보 안내</h2>
+        <h2>Dash 파일럿 개인정보 안내</h2>
         <p className="helper">
           본 서비스는 파일럿 단계로, 아래에 안내된 목적에 한해 점주님의 정보를 수집·이용합니다.
         </p>
@@ -30,7 +30,7 @@ export const PrivacyPage = () => (
         </li>
       </ol>
       <p className="helper">
-        문의: support@silo.app / 계정 삭제 안내: 프로필 &gt; 계정 삭제 버튼 사용
+        문의: support@dash.app / 계정 삭제 안내: 프로필 &gt; 계정 삭제 버튼 사용
       </p>
     </section>
   </div>

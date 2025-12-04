@@ -28,7 +28,7 @@ const FALLBACK_CONTENT: DashboardContentState = {
       name: '미드나잇 피자',
       area: '홍대입구',
       distanceKm: 0.8,
-      benefit: 'Silo 단골 10% 할인',
+      benefit: 'Dash 단골 10% 할인',
       lat: 37.5563,
       lng: 126.9237,
     },
