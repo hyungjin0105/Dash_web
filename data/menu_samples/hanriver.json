@@ -1,0 +1,45 @@
+[
+  {
+    "title": "즉석 떡볶이",
+    "order": 1,
+    "items": [
+      {
+        "name": "한강 즉석 떡볶이",
+        "basePrice": 16500,
+        "description": "라면사리와 야채, 어묵이 기본으로 들어가는 즉석 떡볶이",
+        "optionGroups": [
+          {
+            "title": "매운맛",
+            "isRequired": true,
+            "minSelections": 1,
+            "maxSelections": 1,
+            "choices": [
+              { "label": "보통", "priceDelta": 0 },
+              { "label": "매운맛", "priceDelta": 0 },
+              { "label": "아주 매운맛", "priceDelta": 0 }
+            ]
+          },
+          {
+            "title": "사리 추가",
+            "isRequired": false,
+            "minSelections": 0,
+            "maxSelections": 2,
+            "choices": [
+              { "label": "라면", "priceDelta": 1500 },
+              { "label": "우동", "priceDelta": 2000 },
+              { "label": "치즈", "priceDelta": 2500 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "튀김 & 사이드",
+    "order": 2,
+    "items": [
+      { "name": "모듬 튀김", "basePrice": 9000 },
+      { "name": "순대", "basePrice": 7000 }
+    ]
+  }
+]

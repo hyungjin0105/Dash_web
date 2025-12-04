@@ -1,0 +1,43 @@
+[
+  {
+    "title": "시그니처 말차",
+    "order": 1,
+    "items": [
+      {
+        "name": "그린티 라떼",
+        "basePrice": 6500,
+        "description": "교토산 말차와 우유 블렌딩",
+        "optionGroups": [
+          {
+            "title": "온도",
+            "isRequired": true,
+            "minSelections": 1,
+            "maxSelections": 1,
+            "choices": [
+              { "label": "HOT", "priceDelta": 0 },
+              { "label": "ICE", "priceDelta": 500 }
+            ]
+          },
+          {
+            "title": "우유 선택",
+            "isRequired": false,
+            "minSelections": 0,
+            "maxSelections": 1,
+            "choices": [
+              { "label": "오트밀크", "priceDelta": 1000 },
+              { "label": "저지방", "priceDelta": 0 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "디저트",
+    "order": 2,
+    "items": [
+      { "name": "말차 티라미수", "basePrice": 7800 },
+      { "name": "말차 스콘", "basePrice": 4200 }
+    ]
+  }
+]

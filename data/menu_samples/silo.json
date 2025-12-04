@@ -1,0 +1,17 @@
+[
+  {
+    "title": "대표 메뉴",
+    "order": 1,
+    "items": [
+      { "name": "참치 김밥", "basePrice": 5500 },
+      { "name": "치즈 김밥", "basePrice": 6000 }
+    ]
+  },
+  {
+    "title": "사이드",
+    "order": 2,
+    "items": [
+      { "name": "우동", "basePrice": 7000 }
+    ]
+  }
+]

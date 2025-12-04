@@ -1,0 +1,44 @@
+[
+  {
+    "title": "시그니처 피자",
+    "order": 1,
+    "items": [
+      {
+        "name": "미드나잇 페퍼로니",
+        "basePrice": 23000,
+        "description": "크리스피 씬 도우 + 더블 치즈",
+        "optionGroups": [
+          {
+            "title": "도우 타입",
+            "isRequired": true,
+            "minSelections": 1,
+            "maxSelections": 1,
+            "choices": [
+              { "label": "씬", "priceDelta": 0 },
+              { "label": "하프씬", "priceDelta": 2000 }
+            ]
+          },
+          {
+            "title": "추가 토핑",
+            "isRequired": false,
+            "minSelections": 0,
+            "maxSelections": 3,
+            "choices": [
+              { "label": "페퍼로니 +", "priceDelta": 3000 },
+              { "label": "할라피뇨", "priceDelta": 1000 },
+              { "label": "버섯", "priceDelta": 1500 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "야식 세트",
+    "order": 2,
+    "items": [
+      { "name": "콤보 세트 (피자+윙)" , "basePrice": 32000 },
+      { "name": "단짠 3종 (피자 슬라이스+감튀+콜라)", "basePrice": 15000 }
+    ]
+  }
+]

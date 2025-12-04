@@ -1,0 +1,35 @@
+[
+  {
+    "title": "짬뽕 메뉴",
+    "order": 1,
+    "items": [
+      {"name": "옹짬뽕(기본 짬뽕)", "basePrice": 9000, "description": "살짝 걸쭉하면서도 매콤한 기본 짬뽕"},
+      {"name": "백짬뽕", "basePrice": 9000, "description": "사천고춧가루를 살짝 넣어 칼칼하게 즐기는 백짬뽕"},
+      {"name": "몽글순두부 짬뽕", "basePrice": 11000, "description": "마트 두부아님! 매일 공장에서 받는 순두부가 듬뿍"},
+      {"name": "몽글순두부 백짬뽕", "basePrice": 11000, "description": "순두부와 백짬뽕 국물이 만나는 메뉴"},
+      {"name": "차돌짬뽕", "basePrice": 11000, "description": "우삼겹과 통후추를 비법양념으로 볶아낸 차돌 짬뽕"},
+      {"name": "곤약면 짬뽕", "basePrice": 11000, "description": "면 110kcal, 밀가루 면이 부담스러울 때"},
+      {"name": "눈꽃치즈 로제짬뽕", "basePrice": 12000, "description": "로제소스와 짬뽕국물을 섞어 만든 크리미한 짬뽕"},
+      {"name": "통낙지짬뽕", "basePrice": 13000, "description": "통낙지 한마리가 통째로 들어가는 짬뽕"},
+      {"name": "통갑오징어짬뽕", "basePrice": 14000, "description": "쫄깃한 갑오징어와 짬뽕의 만남"},
+      {"name": "새우짬뽕", "basePrice": 12000, "description": "칵테일새우 10P가 들어간 새우잔치"},
+      {"name": "알곤짬뽕", "basePrice": 12000, "description": "1등급 알과 곤이만 사용하는 깊은 맛"},
+      {"name": "알짬뽕(알만)", "basePrice": 12000, "description": "알만 추가된 버전"},
+      {"name": "곤이짬뽕(곤이만)", "basePrice": 12000, "description": "곤이만 추가된 버전"},
+      {"name": "해산물짬뽕", "basePrice": 16000, "description": "통낙지, 가리비, 큰새우 등 다양한 해산물이 듬뿍"},
+      {"name": "통문어짬뽕", "basePrice": 27000, "description": "통문어 한 마리가 통째로 올라가는 특선"}
+    ]
+  },
+  {
+    "title": "짜장 & 볶음",
+    "order": 2,
+    "items": [
+      {"name": "짜장면", "basePrice": 7000, "description": "기본 짜장면"},
+      {"name": "땡초짜장면", "basePrice": 8000, "description": "청양고추를 듬뿍 올려 매콤하게 먹는 짜장"},
+      {"name": "차돌짜장면", "basePrice": 9000, "description": "차돌이 듬뿍 올라간 짜장면"},
+      {"name": "해물볶음짜장면", "basePrice": 9000, "description": "해물과 불향을 더한 볶음 짜장"},
+      {"name": "곤약짜장면", "basePrice": 9000, "description": "곤약면으로 칼로리를 낮춘 짜장"},
+      {"name": "해물쟁반짜장면 2인", "basePrice": 20000, "description": "2인이 즐기는 해물쟁반짜장"}
+    ]
+  }
+]
