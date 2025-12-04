@@ -12,9 +12,9 @@ type FirebaseEnvKey =
 const getEnv = (key: FirebaseEnvKey) => {
   const value = import.meta.env[key]
   if (!value) {
-    console.warn(`Missing value for ${key}. Check your .env configuration.`)
+    console.error(`Missing value for ${key}. Check your .env configuration.`)
   }
-  return value
+  return value || ''
 }
 
 export const firebaseConfig = {
