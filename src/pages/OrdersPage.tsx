@@ -59,7 +59,7 @@ const FakeQrPanel = () => {
       </header>
       <div className="qr-grid">
         {targets.map((store) => {
-          const fakeUrl = `https://silo.app/demo-order/${store.id}`
+          const fakeUrl = `https://dash.app/demo-order/${store.id}`
           const qrSrc = `https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=${encodeURIComponent(fakeUrl)}`
           return (
             <article key={store.id} className="qr-card">

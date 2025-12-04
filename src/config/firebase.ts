@@ -27,5 +27,5 @@ export const firebaseConfig = {
   measurementId: getEnv('VITE_FIREBASE_MEASUREMENT_ID'),
 }
 
-export const adminEmailDomain = getEnv('VITE_ADMIN_EMAIL_DOMAIN') ?? '@silo.app'
+export const adminEmailDomain = getEnv('VITE_ADMIN_EMAIL_DOMAIN') ?? '@dash.app'
 export const allowAllEmails = import.meta.env.VITE_ALLOW_ALL_EMAILS === 'true'

@@ -34,7 +34,7 @@ body,
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #ff9f0f;
+  background: #8b5cf6;
   display: inline-block;
 }
 
@@ -59,7 +59,7 @@ body,
 }
 
 .nav__item--active {
-  background: rgba(255, 159, 15, 0.15);
+  background: rgba(139, 92, 246, 0.15);
   color: #ffffff;
 }
 
@@ -195,8 +195,8 @@ body,
   border: none;
   padding: 0.5rem 1.2rem;
   font-weight: 600;
-  background: linear-gradient(135deg, #f97316, #fbbf24);
-  color: #fff7ed;
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  color: #f5f3ff;
   cursor: pointer;
 }
 
@@ -212,11 +212,11 @@ body,
   justify-content: space-between;
   gap: 1rem;
   align-items: center;
-  border: 1px solid #fecaca;
-  background: #fff7ed;
+  border: 1px solid #ddd6fe;
+  background: #f5f3ff;
   border-radius: 1rem;
   padding: 1rem 1.25rem;
-  color: #7c2d12;
+  color: #4c1d95;
 }
 
 .store-alert code {
@@ -310,8 +310,8 @@ body,
 .badge {
   text-transform: uppercase;
   font-size: 0.7rem;
-  background: #ffedd5;
-  color: #9a3412;
+  background: #ede9fe;
+  color: #5b21b6;
   padding: 0.2rem 0.5rem;
   border-radius: 999px;
   font-weight: 600;
@@ -357,7 +357,7 @@ body,
   width: 40px;
   height: 40px;
   border-radius: 12px;
-  background: linear-gradient(135deg, #f59e0b, #f97316);
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
   color: #fff;
   display: inline-flex;
   align-items: center;
@@ -613,11 +613,11 @@ body,
 
 .pill {
   border-radius: 999px;
-  border: 1px solid #fed7aa;
+  border: 1px solid #e9d5ff;
   padding: 0.2rem 0.8rem;
   font-size: 0.75rem;
-  color: #c2410c;
-  background: #fff7ed;
+  color: #5b21b6;
+  background: #f5f3ff;
 }
 
 .data-table {
@@ -825,21 +825,21 @@ body,
   gap: 0.6rem;
 }
 
-.silo-street {
+.dash-street {
   display: grid;
   grid-template-columns: minmax(240px, 2fr) minmax(220px, 1fr);
   gap: 1.2rem;
   align-items: stretch;
 }
 
-.silo-street__map {
+.dash-street__map {
   border-radius: 1.25rem;
   min-height: 260px;
   background: #e2e8f0;
   overflow: hidden;
 }
 
-.silo-street__map--error {
+.dash-street__map--error {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -849,7 +849,7 @@ body,
   text-align: center;
 }
 
-.silo-street__list {
+.dash-street__list {
   display: flex;
   flex-direction: column;
   gap: 0.9rem;
@@ -861,7 +861,7 @@ body,
   gap: 0.5rem;
 }
 
-.silo-street__list article {
+.dash-street__list article {
   border: 1px solid #e2e8f0;
   border-radius: 1.1rem;
   padding: 0.85rem 1rem;
@@ -989,9 +989,9 @@ body,
 }
 
 .category-pill--active {
-  background: #fffbeb;
-  border-color: #f97316;
-  color: #c2410c;
+  background: #f5f3ff;
+  border-color: #8b5cf6;
+  color: #5b21b6;
 }
 
 .profile-modal__backdrop {

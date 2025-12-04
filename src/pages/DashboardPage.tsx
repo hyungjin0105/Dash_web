@@ -3,7 +3,7 @@ import { useOrderStats } from '../hooks/useOrderStats'
 import { useLoyaltyInsights } from '../hooks/useLoyaltyInsights'
 import type { LoyaltySegment } from '../hooks/useLoyaltyInsights'
 import { useStoreContext } from '../providers/StoreProvider'
-import { SiloStreetMap } from '../components/dashboard/SiloStreetMap'
+import { DashStreetMap } from '../components/dashboard/DashStreetMap'
 import { useDashboardContent } from '../hooks/useDashboardContent'
 import {
   AreaChart,
@@ -204,7 +204,7 @@ export const DashboardPage = () => {
       </section>
       <section className="panel panel--sub">
         <header>
-          <p className="eyebrow">Silo 거리 지도</p>
+          <p className="eyebrow">Dash 거리 지도</p>
           <h2>근처 제휴 매장을 한눈에</h2>
           <p className="helper">단골이 동네 안에서 자연스럽게 이동하도록 파트너 혜택을 설계해보세요.</p>
         </header>
@@ -214,16 +214,16 @@ export const DashboardPage = () => {
             제휴 매장 데이터를 가져오지 못했습니다. Firestore `dashboardContent/global` 문서를 확인해주세요.
           </p>
         )}
-        <div className="silo-street">
+        <div className="dash-street">
           {partnerMarkers.length > 0 ? (
-            <SiloStreetMap partners={partnerMarkers} />
+            <DashStreetMap partners={partnerMarkers} />
           ) : (
-            <div className="silo-street__map silo-street__map--error">
+            <div className="dash-street__map dash-street__map--error">
               <p>표시할 제휴 매장이 없습니다.</p>
               <p className="helper">Firestore dashboardContent/global.partnerStores 에 매장을 추가해주세요.</p>
             </div>
           )}
-          <div className="silo-street__list">
+          <div className="dash-street__list">
             {partnerStores.length === 0 && (
               <p className="helper">등록된 제휴 매장이 없습니다. 목록을 채우면 여기서 확인할 수 있어요.</p>
             )}

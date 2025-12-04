@@ -13,7 +13,7 @@ interface Props {
   partners: PartnerMarker[]
 }
 
-export const SiloStreetMap = ({ partners }: Props) => {
+export const DashStreetMap = ({ partners }: Props) => {
   const containerRef = useRef<HTMLDivElement | null>(null)
   const [error, setError] = useState<string | null>(null)
 
@@ -93,12 +93,12 @@ export const SiloStreetMap = ({ partners }: Props) => {
 
   if (error) {
     return (
-      <div className="silo-street__map silo-street__map--error">
+      <div className="dash-street__map dash-street__map--error">
         <p className="state__error">{error}</p>
         <p className="helper">환경변수와 허용된 도메인을 다시 확인해주세요.</p>
       </div>
     )
   }
 
-  return <div ref={containerRef} className="silo-street__map" />
+  return <div ref={containerRef} className="dash-street__map" />
 }
