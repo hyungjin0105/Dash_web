@@ -1,4 +1,5 @@
 import { useAuth } from '../../providers/AuthProvider'
+import logoImg from '../../assets/dash_logo.png'
 
 export const LoadingState = () => (
   <div className="full-bleed-state">
@@ -13,8 +14,7 @@ export const SignInState = () => {
   return (
     <div className="full-bleed-state">
       <div className="brand-mark">
-        <span className="brand-mark__logo">D</span>
-        <span className="brand-mark__name">Dash Admin</span>
+        <img src={logoImg} alt="Logo" className="brand-mark__logo" />
       </div>
       <p className="eyebrow">인증</p>
       <h2>Google 계정으로 로그인</h2>
